@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        header {
+            background: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            max-width: 100px;
+            max-height: 100px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin-top: 200px;
+            margin-left: 500px;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .contact-info,
+        .contact-form {
+            max-width: 500px;
+            width: 100%;
+            margin: 0 20px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .back-home {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="images/other_header.png" alt="Home">
+    <nav>
+        <a href="index.html">back home</a>
+        <a href="about.html">about</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Contact Me</h1>
+
+    <div class="contact-info">
+        <p>Email: <a href="mailto:bea.varry@gmail.com">bea.varry@gmail.com</a></p>
+        <p>Telephone: <a href="tel:+393899123872">+39 3899123872</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/beatrice.varriale" target="_blank">beatrice.varriale</a></p>
+    </div>
+</main>
+<div class="contact-form">
+    <h2>Send a Message</h2>
+    <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
